@@ -3,7 +3,7 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     - name: cosmorat
-      url-base: https://github.com/Cuttlerat/zmk-keyboard-cosmorat
+      url-base: https://github.com/Cuttlerat
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -11,7 +11,7 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: cosmorat
+    - name: zmk-keyboard-cosmorat
       remote: cosmorat
       revision: main
   self:
