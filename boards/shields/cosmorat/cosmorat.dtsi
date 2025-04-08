@@ -1,3 +1,5 @@
+#include <physical_layouts.dtsi>
+
 / {
     cosmorat_layout: cosmorat_layout {
         compatible = "zmk,physical-layout";
