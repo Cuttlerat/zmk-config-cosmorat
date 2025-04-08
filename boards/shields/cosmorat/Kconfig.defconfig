@@ -1,7 +1,7 @@
 if SHIELD_COSMORAT
 
 # Name must be less than 16 characters long!
-config ZMK_COSMORAT
+config ZMK_KEYBOARD_NAME
     default "Cosmos Rata"
 
 endif
