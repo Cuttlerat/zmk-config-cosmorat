@@ -1,0 +1,8 @@
+---
+file_format: 1
+id: cosmorat
+name: Cosmos Rata
+type: shield
+url: https://github.com/Cuttlerat/zmk-keyboard-cosmorat
+requires: 
+  - pro_micro
