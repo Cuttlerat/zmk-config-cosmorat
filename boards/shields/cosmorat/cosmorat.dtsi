@@ -4,7 +4,7 @@
     cosmorat_layout: cosmorat_layout {
         compatible = "zmk,physical-layout";
         display-name = "Cosmos Rata";
-
+        transform = <&default_transform>;
         keys  //                     w   h    x    y     rot    rx    ry
             // Основной блок 6x3 (верхний ряд)
             = <&key_physical_attrs 100 100    0    0       0     0     0>
