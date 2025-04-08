@@ -5,5 +5,4 @@ name: Cosmos Rata
 type: shield
 url: https://github.com/Cuttlerat/zmk-keyboard-cosmorat
 requires: 
-  - nice_nano
   - pro_micro

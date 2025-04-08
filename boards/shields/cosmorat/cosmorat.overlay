@@ -22,23 +22,23 @@
 
     kscan0: kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
-        diode-direction = "col2row";
+        diode-direction = "row2col";
         wakeup-source;
 
         col-gpios
-            = <&gpio1 1 GPIO_ACTIVE_HIGH>  // про микро пин 19 = gpio1 1 для nice_nano
-            , <&gpio1 2 GPIO_ACTIVE_HIGH>  // про микро пин 18 = gpio1 2 для nice_nano
-            , <&gpio1 11 GPIO_ACTIVE_HIGH> // про микро пин 15 = gpio1 11 для nice_nano
-            , <&gpio1 10 GPIO_ACTIVE_HIGH> // про микро пин 14 = gpio1 10 для nice_nano
-            , <&gpio1 13 GPIO_ACTIVE_HIGH> // про микро пин 16 = gpio1 13 для nice_nano
-            , <&gpio1 6 GPIO_ACTIVE_HIGH>  // про микро пин 10 = gpio1 6 для nice_nano
+            = <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
 
         row-gpios
-            = <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // про микро пин 9 = gpio0 24 для nice_nano
-            , <&gpio0 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // про микро пин 8 = gpio0 17 для nice_nano
-            , <&gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // про микро пин 7 = gpio0 20 для nice_nano
-            , <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // про микро пин 6 = gpio0 22 для nice_nano
+            = <&pro_micro 9 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 8 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 7 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 6 GPIO_ACTIVE_HIGH>
             ;
     };
 };
