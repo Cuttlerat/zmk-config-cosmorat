@@ -53,7 +53,7 @@
 
         layer_3 {
             bindings = <
-&kp LC(LA(DELETE))  &trans        &trans        &kp UP_ARROW    &to 5         &kp PRINTSCREEN
+&kp LC(LA(DELETE))  &sys_reset    &trans        &kp UP_ARROW    &to 5         &kp PRINTSCREEN
 &kp DEL             &out OUT_BLE  &kp LEFT      &kp DOWN_ARROW  &kp RIGHT     &out OUT_USB
 &bt BT_SEL 0        &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4  &bt BT_CLR
 &tog 3              &tog 4        &trans        &trans          &trans        &trans
