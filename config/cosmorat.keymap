@@ -11,29 +11,13 @@
             // |     A     |     S     |     D     |     F     |     G     |     H     |
             // |     Z     |     X     |     C     |     V     |     B     |     N     |
             //                                     |  LCTRL    |  LSHIFT   |  LALT     |  LGUI     |
-            //                                                              |  SPACE    |  MO(1)    |
+            //                                                             |  SPACE    |  SPACE    |
             bindings = <
                 &kp Q      &kp W      &kp E     &kp R     &kp T     &kp Y
                 &kp A      &kp S      &kp D     &kp F     &kp G     &kp H
                 &kp Z      &kp X      &kp C     &kp V     &kp B     &kp N
                                                 &kp LCTRL &kp LSHIFT &kp LALT &kp LGUI
-                                                                     &kp SPACE &mo 1
-            >;
-        };
-
-        layer_1 { // Layer 1 (активируется при нажатии на клавишу в thumb cluster)
-            // -------------------------------------
-            // |     1     |     2     |     3     |     4     |     5     |     6     |
-            // |     7     |     8     |     9     |     0     |     -     |     =     |
-            // |     `     |     \     |     [     |     ]     |     '     |     ;     |
-            //                                     |  LCTRL    |  LSHIFT   |  LALT     |  LGUI     |
-            //                                                              |  SPACE    |  MO(1)    |
-            bindings = <
-                &kp NUM_1  &kp NUM_2  &kp NUM_3 &kp NUM_4 &kp NUM_5 &kp NUM_6
-                &kp NUM_7  &kp NUM_8  &kp NUM_9 &kp NUM_0 &kp MINUS &kp EQUAL
-                &kp GRAVE  &kp BSLH   &kp LBKT  &kp RBKT  &kp QUOTE &kp SEMI
-                                                &kp LCTRL &kp LSHIFT &kp LALT &kp LGUI
-                                                                     &kp SPACE &mo 1
+                                                                     &kp SPACE &kp SPACE
             >;
         };
     };
