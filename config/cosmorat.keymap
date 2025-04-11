@@ -42,10 +42,10 @@
 
         default_layer {
             bindings = <
-&kp TAB         &kp Q      &kp W  &kp E     &kp R          &kp T
-&kp LEFT_SHIFT  &kp A      &kp S  &kp D     &kp F          &kp G
-&kp LCTRL       &kp Z      &kp X  &kp C     &kp V          &kp B
-&mo 1           &kp SPACE  &mo 2  &kp LALT  &kp BACKSPACE  &kp LEFT_WIN
+&kp TAB         &kp Q          &kp W      &kp E  &kp R         &kp T
+&kp LEFT_SHIFT  &kp A          &kp S      &kp D  &kp F         &kp G
+&kp LCTRL       &kp Z          &kp X      &kp C  &kp V         &kp B
+&mo 1           &kp BACKSPACE  &kp SPACE  &mo 2  &kp LEFT_ALT  &kp LEFT_WIN
             >;
         };
 
@@ -69,7 +69,7 @@
 
         layer_3 {
             bindings = <
-&kp LC(LA(DELETE))  &sys_reset    &trans        &kp UP_ARROW    &to 5         &kp PRINTSCREEN
+&kp LC(LA(DELETE))  &bootloader   &trans        &kp UP_ARROW    &to 5         &kp PRINTSCREEN
 &kp DEL             &out OUT_BLE  &kp LEFT      &kp DOWN_ARROW  &kp RIGHT     &out OUT_USB
 &bt BT_SEL 0        &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4  &tog 3
 &tog 3              &tog 4        &trans        &trans          &trans        &trans
