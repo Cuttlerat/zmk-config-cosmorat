@@ -17,7 +17,7 @@
                 &kp A      &kp S      &kp D     &kp F     &kp G     &kp H
                 &kp Z      &kp X      &kp C     &kp V     &kp B     &kp N
                                                 &kp LCTRL &kp LSHIFT &kp LALT &kp LGUI
-                                                                     &kp SPACE &kp SPACE
+                                                                     &kp SPACE &bootloader
             >;
         };
     };
