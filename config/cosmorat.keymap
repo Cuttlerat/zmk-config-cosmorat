@@ -23,13 +23,13 @@
             flavor = "hold-preferred";
             require-prior-idle-ms = <125>;
         };
-        cs: ctrl_shift {
+
+        ca: ctrl_alt {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <10>;
             bindings = <&kp LCTRL>, <&kp LALT>;
         };
-
     };
 
     combos {
@@ -53,10 +53,10 @@
 
         left_side {
             bindings = <
-&kp TAB         &kp Q      &kp W          &kp E  &kp R         &kp T
-&kp LEFT_SHIFT  &kp A      &kp S          &kp D  &kp F         &kp G
-&kp LCTRL       &kp Z      &kp X          &kp C  &kp V         &kp B
-&mo 1           &kp SPACE  &kp BACKSPACE  &mo 2  &cs           &kp LEFT_WIN
+&kp TAB         &kp Q      &kp W          &kp E  &kp R  &kp T
+&kp LEFT_SHIFT  &kp A      &kp S          &kp D  &kp F  &kp G
+&kp LCTRL       &kp Z      &kp X          &kp C  &kp V  &kp B
+&mo 1           &kp SPACE  &kp BACKSPACE  &mo 2  &ca    &kp LEFT_WIN
             >;
         };
 
