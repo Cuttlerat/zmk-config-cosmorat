@@ -24,15 +24,15 @@
     combos {
         compatible = "zmk,combos";
 
-        switch_lang {
+        lang_switch {
             bindings = <&kp LG(SPACE)>;
-            key-positions = <12 19>;
+            key-positions = <12 18>;
             timeout-ms = <150>;
         };
 
-        mouse {
-            bindings = <&to 5>;
-            key-positions = <12 18>;
+        print_screen {
+            bindings = <&kp PRINTSCREEN>;
+            key-positions = <12 22>;
             timeout-ms = <150>;
         };
     };
@@ -40,7 +40,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        left_side {
             bindings = <
 &kp TAB         &kp Q      &kp W          &kp E  &kp R         &kp T
 &kp LEFT_SHIFT  &kp A      &kp S          &kp D  &kp F         &kp G
@@ -49,7 +49,7 @@
             >;
         };
 
-        layer_1 {
+        right_side {
             bindings = <
 &kp LBKT         &kp P     &kp O    &kp I      &kp U   &kp Y
 &as LS(SQT) SQT  &kp SEMI  &kp L    &kp K      &kp J   &kp H
@@ -58,25 +58,25 @@
             >;
         };
 
-        layer_2 {
+        numbers {
             bindings = <
-&kp ESC   &kp N1     &kp N2     &kp N3     &kp N4    &kp N5
-&kp BSPC  &kp N6     &kp N7     &kp N8     &kp N9    &kp N0
-&tog 3    &kp MINUS  &kp EQUAL  &kp GRAVE  &kp BSLH  &kp ENTER
-&trans    &trans     &trans     &trans     &trans    &trans
+&kp ESC  &kp N1     &kp N2     &kp N3     &kp N4    &kp N5
+&to 5    &kp N6     &kp N7     &kp N8     &kp N9    &kp N0
+&tog 3   &kp MINUS  &kp EQUAL  &kp GRAVE  &kp BSLH  &kp ENTER
+&trans   &trans     &trans     &trans     &trans    &trans
             >;
         };
 
-        layer_3 {
+        arrows {
             bindings = <
-&kp LC(LA(DELETE))  &bootloader   &trans        &kp UP_ARROW    &to 5         &kp PRINTSCREEN
+&kp LC(LA(DELETE))  &none         &none         &kp UP_ARROW    &none         &kp PRINTSCREEN
 &kp DEL             &out OUT_BLE  &kp LEFT      &kp DOWN_ARROW  &kp RIGHT     &out OUT_USB
-&bt BT_SEL 0        &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4  &tog 3
-&tog 3              &tog 4        &trans        &trans          &trans        &trans
+&bt BT_SEL 0        &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4  &none
+&tog 3              &tog 4        &tog 3        &tog 3          &tog 3        &tog 6
             >;
         };
 
-        layer_4 {
+        f {
             bindings = <
 &kp F1     &kp F2    &kp F3     &kp F4   &kp F5            &kp F6
 &kp F7     &kp F8    &kp F9     &kp F10  &kp F11           &kp F12
@@ -85,12 +85,21 @@
             >;
         };
 
-        layer_5 {
+        mouse {
             bindings = <
-&trans     &trans     &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &trans
-&trans     &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
-&trans     &trans     &trans          &trans          &trans           &trans
-&mkp LCLK  &mkp RCLK  &mkp MCLK       &tog 5          &trans           &trans
+&bootloader  &trans     &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &trans
+&trans       &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
+&trans       &trans     &trans          &trans          &trans           &trans
+&mkp LCLK    &mkp RCLK  &mkp MCLK       &tog 5          &trans           &trans
+            >;
+        };
+
+        gaming_mode {
+            bindings = <
+&kp T      &kp TAB    &kp Q   &kp W  &kp E         &kp R
+&kp G      &kp LSHFT  &kp A   &kp S  &kp D         &kp F
+&kp B      &kp LCTRL  &kp Z   &kp X  &kp C         &kp V
+&kp SPACE  &mo 2      &tog 6  &mo 3  &kp LEFT_ALT  &kp LEFT_WIN
             >;
         };
     };
