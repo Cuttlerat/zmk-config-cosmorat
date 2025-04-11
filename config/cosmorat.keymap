@@ -80,9 +80,9 @@
 
         arrows {
             bindings = <
-&kp LC(LA(DELETE))  &none         &none         &kp UP_ARROW    &none         &kp PRINTSCREEN
+&kp LC(LA(DELETE))  &none         &none         &kp UP_ARROW    &none         &bootloader
 &kp DEL             &out OUT_BLE  &kp LEFT      &kp DOWN_ARROW  &kp RIGHT     &out OUT_USB
-&bt BT_SEL 0        &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4  &none
+&bt BT_SEL 0        &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4  &bt BT_CLR
 &tog 3              &tog 4        &tog 3        &tog 3          &tog 3        &tog 6
             >;
         };
@@ -91,26 +91,26 @@
             bindings = <
 &kp F1     &kp F2    &kp F3     &kp F4   &kp F5            &kp F6
 &kp F7     &kp F8    &kp F9     &kp F10  &kp F11           &kp F12
-&kp LCTRL  &kp LALT  &kp LSHFT  &trans   &ext_power EP_ON  &ext_power EP_OFF
-&tog 4     &tog 4    &trans     &trans   &trans            &bt BT_CLR
+&kp LCTRL  &kp LALT  &kp LSHFT  &none    &ext_power EP_ON  &ext_power EP_OFF
+&to 0      &to 0     &to 0      &to 0    &to 0             &to 0
             >;
         };
 
         mouse {
             bindings = <
-&bootloader  &trans     &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &trans
-&trans       &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
-&trans       &trans     &trans          &trans          &trans           &trans
-&mkp LCLK    &mkp RCLK  &mkp MCLK       &tog 5          &trans           &trans
+&none        &none      &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none
+&none        &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
+&bootloader  &none      &none           &none           &none            &none
+&mkp LCLK    &mkp RCLK  &mkp MCLK       &tog 5          &tog 5           &tog 5
             >;
         };
 
         gaming_mode {
             bindings = <
-&kp T      &kp TAB    &kp Q   &kp W  &kp E         &kp R
-&kp G      &kp LSHFT  &kp A   &kp S  &kp D         &kp F
-&kp B      &kp LCTRL  &kp Z   &kp X  &kp C         &kp V
-&kp SPACE  &mo 2      &tog 6  &mo 3  &kp LEFT_ALT  &kp LEFT_WIN
+&kp T      &kp TAB    &kp Q  &kp W  &kp E         &kp R
+&kp G      &kp LSHFT  &kp A  &kp S  &kp D         &kp F
+&kp B      &kp LCTRL  &kp Z  &kp X  &kp C         &kp V
+&kp SPACE  &mo 2      &to 0  &mo 3  &kp LEFT_ALT  &kp LEFT_WIN
             >;
         };
     };
