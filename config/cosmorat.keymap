@@ -62,7 +62,7 @@
 
         left_side {
             bindings = <
-&kp TAB         &q         &kp W          &kp E  &kp R  &kp T
+&kp TAB         &kp Q      &kp W          &kp E  &kp R  &kp T
 &kp LEFT_SHIFT  &kp A      &kp S          &kp D  &kp F  &kp G
 &kp LCTRL       &kp Z      &kp X          &kp C  &kp V  &kp B
 &mo 1           &kp SPACE  &kp BACKSPACE  &mo 2  &ca    &kp LEFT_WIN
