@@ -126,6 +126,20 @@
             timeout-ms = <200>;
             require-prior-idle-ms = <200>;
         };
+
+        comma {
+            bindings = <&kp KP_COMMA>;
+            key-positions = <7 9>;
+            timeout-ms = <200>;
+            require-prior-idle-ms = <200>;
+        };
+
+        dot {
+            bindings = <&kp KP_DOT>;
+            key-positions = <10 8>;
+            timeout-ms = <200>;
+            require-prior-idle-ms = <200>;
+        };
     };
 
     macros {
