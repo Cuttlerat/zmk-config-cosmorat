@@ -112,6 +112,13 @@
             timeout-ms = <200>;
             require-prior-idle-ms = <200>;
         };
+
+        slash {
+            bindings = <&kp KP_SLASH>;
+            key-positions = <13 14>;
+            timeout-ms = <200>;
+            require-prior-idle-ms = <200>;
+        };
     };
 
     macros {
