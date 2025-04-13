@@ -34,7 +34,7 @@
         ls: language_switch {
             compatible = "zmk,behavior-mod-morph";
             label = "Language Switch";
-            bindings = <&mo 1>, <&kp LG(SPACE)>;
+            bindings = <&kp SPACE>, <&kp LG(SPACE)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
@@ -49,22 +49,6 @@
             key-positions = <12 22>;
             timeout-ms = <200>;
         };
-
-        lang_switch {
-            bindings = <&kp LG(SPACE)>;
-            key-positions = <12 19>;
-            timeout-ms = <200>;
-            require-prior-idle-ms = <200>;
-        };
-    };
-
-    macros {
-        q: q {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp K_CANCEL &kp Q>;
-            label = "Q";
-        };
     };
 
     keymap {
@@ -72,10 +56,10 @@
 
         left_side {
             bindings = <
-&kp TAB         &kp Q      &kp W          &kp E  &kp R  &kp T
-&kp LEFT_SHIFT  &kp A      &kp S          &kp D  &kp F  &kp G
-&kp LCTRL       &kp Z      &kp X          &kp C  &kp V  &kp B
-&mo 1           &kp SPACE  &kp BACKSPACE  &mo 2  &ca    &kp LEFT_WIN
+&kp TAB         &kp Q  &kp W          &kp E  &kp R  &kp T
+&kp LEFT_SHIFT  &kp A  &kp S          &kp D  &kp F  &kp G
+&kp LCTRL       &kp Z  &kp X          &kp C  &kp V  &kp B
+&mo 1           &ls    &kp BACKSPACE  &mo 2  &ca    &kp LEFT_WIN
             >;
         };
 
