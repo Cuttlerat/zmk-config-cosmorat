@@ -44,12 +44,6 @@
     combos {
         compatible = "zmk,combos";
 
-        lang_switch {
-            bindings = <&kp LG(SPACE)>;
-            key-positions = <12 18>;
-            timeout-ms = <200>;
-        };
-
         print_screen {
             bindings = <&kp PRINTSCREEN>;
             key-positions = <12 22>;
