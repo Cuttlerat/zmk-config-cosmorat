@@ -52,21 +52,7 @@
 
         lang_switch {
             bindings = <&kp LG(SPACE)>;
-            key-positions = <10 8 9 7>;
-            timeout-ms = <200>;
-            require-prior-idle-ms = <200>;
-        };
-
-        lpar {
-            bindings = <&kp KP_MINUS>;
-            key-positions = <14 15>;
-            timeout-ms = <200>;
-            require-prior-idle-ms = <200>;
-        };
-
-        rpar {
-            bindings = <&kp UNDERSCORE>;
-            key-positions = <15 16>;
+            key-positions = <12 19>;
             timeout-ms = <200>;
             require-prior-idle-ms = <200>;
         };
