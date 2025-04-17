@@ -6,6 +6,11 @@
         zmk,physical-layout = &cosmorat_layout;
     };
 
+    soft_off_wakers {
+        compatible = "zmk,soft-off-wakeup-sources";
+        wakeup-sources = <&kscan0>;
+    };
+
     default_transform: default_transform {
         compatible = "zmk,matrix-transform";
         columns = <8>;
