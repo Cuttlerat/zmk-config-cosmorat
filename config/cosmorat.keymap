@@ -77,7 +77,7 @@
 &kp LC(LA(DELETE))  &none           &none     &kp UP_ARROW    &none      &none
 &kp DEL             &kp LEFT_SHIFT  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &none
 &to 4               &kp LCTRL       &none     &none           &none      &kp ENTER
-&tog 3              &tog 3          &tog 3    &tog 3          &tog 3     &tog 6
+&tog 3              &tog 3          &none     &tog 3          &tog 3     &tog 6
             >;
         };
 
