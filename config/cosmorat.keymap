@@ -1,5 +1,5 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 40    // default: 10
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 10    // default: 10
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -68,7 +68,7 @@
             bindings = <
 &kp LC(LA(DELETE))  &none         &none         &kp UP_ARROW    &none         &bt BT_CLR
 &kp DEL             &out OUT_BLE  &kp LEFT      &kp DOWN_ARROW  &kp RIGHT     &out OUT_USB
-&bt BT_SEL 0        &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4  &kp ENTER
+&bt BT_SEL 0        &bt BT_SEL 1  &none         &none           &none         &kp ENTER
 &tog 3              &tog 4        &tog 3        &tog 3          &tog 3        &tog 6
             >;
         };
