@@ -1,3 +1,6 @@
 # No whitespace after the comma or in your keyboard name!
 config SHIELD_MY_KEYBOARD
     def_bool $(shields_list_contains,cosmorat)
+
+config SHIELD_CORNE_RIGHT
+	def_bool $(shields_list_contains,corne_right)

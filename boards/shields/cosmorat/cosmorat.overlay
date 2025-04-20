@@ -4,6 +4,12 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,physical-layout = &cosmorat_layout;
+        zmk,split = &split;
+        zmk,split-role = "central";
+    };
+
+    split: split {
+        compatible = "zmk,split";
     };
 
     soft_off_wakers {
