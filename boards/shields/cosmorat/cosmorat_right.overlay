@@ -6,6 +6,13 @@
         zmk,split-role = "peripheral";
     };
 
+    default_transform: default_transform {
+        compatible = "zmk,matrix-transform";
+        columns = <6>;
+        rows = <4>;
+        col-offset = <8>;
+    };
+
     kscan1: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN1";
