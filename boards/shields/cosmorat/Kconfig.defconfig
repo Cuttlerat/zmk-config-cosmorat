@@ -1,14 +1,20 @@
-if SHIELD_COSMOS_RATA
+if SHIELD_COSMORAT_LEFT
 
 config ZMK_KEYBOARD_NAME
-	default "Cosmos Rata"
+	default "Cosmorat Left"
+	
+config ZMK_SPLIT
+	default y
+	
+config ZMK_SPLIT_ROLE_CENTRAL
+	default y
 
 endif
 
-if SHIELD_CORNE_RIGHT
+if SHIELD_COSMORAT_RIGHT
 
 config ZMK_KEYBOARD_NAME
-	default "Corne Right"
+	default "Cosmorat Right"
 	
 config ZMK_SPLIT
 	default y
