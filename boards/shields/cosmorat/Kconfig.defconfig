@@ -1,7 +1,19 @@
-if SHIELD_COSMORAT
+if SHIELD_COSMOS_RATA
 
-# Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
-    default "Cosmos Rata"
+	default "Cosmos Rata"
+
+endif
+
+if SHIELD_CORNE_RIGHT
+
+config ZMK_KEYBOARD_NAME
+	default "Corne Right"
+	
+config ZMK_SPLIT
+	default y
+	
+config ZMK_SPLIT_ROLE_PERIPHERAL
+	default y
 
 endif
