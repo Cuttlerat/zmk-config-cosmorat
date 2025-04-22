@@ -9,7 +9,7 @@
 &soft_off { hold-time-ms = <3000>; };
 
 &mt {
-    flavor = "hold-preferred";
+    flavor = "tap-preferred";
     require-prior-idle-ms = <300>;
     tapping-term-ms = <300>;
 };
