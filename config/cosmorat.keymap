@@ -50,7 +50,7 @@
 &kp TAB         &kp Q      &kp W  &kp E  &kp R  &kp T         &kp Y          &kp U      &kp I      &kp O    &kp P     &kp LBKT
 &kp LEFT_SHIFT  &kp A      &kp S  &kp D  &kp F  &kp G         &kp H          &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
 &mo 7           &kp Z      &kp X  &kp C  &kp V  &kp B         &kp N          &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RBKT
-&mo 1           &kp SPACE  &cb    &mo 2  &ca    &kp LEFT_WIN  &kp BACKSPACE  &kp SPACE  &kp ENTER
+&mo 1           &kp SPACE  &cb    &mo 2  &ca    &kp LEFT_WIN
             >;
         };
 
@@ -59,7 +59,7 @@
 &kp LBKT         &kp P     &kp O    &kp I      &kp U   &kp Y   &trans  &trans  &trans  &trans  &trans  &trans
 &as LS(SQT) SQT  &kp SEMI  &kp L    &kp K      &kp J   &kp H   &trans  &trans  &trans  &trans  &trans  &trans
 &kp RBKT         &kp FSLH  &kp DOT  &kp COMMA  &kp M   &kp N   &trans  &trans  &trans  &trans  &trans  &trans
-&trans           &trans    &trans   &trans     &trans  &trans  &trans  &trans  &trans
+&trans           &trans    &trans   &trans     &trans  &trans
             >;
         };
 
@@ -68,7 +68,7 @@
 &kp ESC  &kp N1     &kp N2     &kp N3     &kp N4    &kp N5     &kp ESC  &kp HOME  &kp UP    &kp END    &kp PG_UP  &kp MINUS
 &to 5    &kp N6     &kp N7     &kp N8     &kp N9    &kp N0     &kp TAB  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &kp EQUAL
 &tog 3   &kp MINUS  &kp EQUAL  &kp GRAVE  &kp BSLH  &kp ENTER  &trans   &trans    &trans    &trans     &trans     &trans
-&trans   &trans     &trans     &trans     &trans    &trans     &trans   &trans    &trans
+&trans   &trans     &trans     &trans     &trans    &trans
             >;
         };
 
@@ -77,7 +77,7 @@
 &kp LC(LA(DELETE))  &none           &none     &kp UP_ARROW    &none      &none      &trans  &trans  &trans  &trans  &trans  &trans
 &kp DEL             &kp LEFT_SHIFT  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &none      &trans  &trans  &trans  &trans  &trans  &trans
 &to 4               &kp LCTRL       &none     &none           &none      &kp ENTER  &trans  &trans  &trans  &trans  &trans  &trans
-&tog 3              &tog 3          &none     &tog 3          &tog 3     &tog 6     &trans  &trans  &trans
+&tog 3              &tog 3          &none     &tog 3          &tog 3     &tog 6
             >;
         };
 
@@ -86,7 +86,7 @@
 &kp F1     &kp F2    &kp F3     &kp F4   &kp F5   &kp F6   &trans  &trans  &trans  &trans  &trans  &trans
 &kp F7     &kp F8    &kp F9     &kp F10  &kp F11  &kp F12  &trans  &trans  &trans  &trans  &trans  &trans
 &kp LCTRL  &kp LALT  &kp LSHFT  &none    &none    &none    &trans  &trans  &trans  &trans  &trans  &trans
-&to 0      &to 0     &to 0      &to 0    &to 0    &to 0    &trans  &trans  &trans
+&to 0      &to 0     &to 0      &to 0    &to 0    &to 0
             >;
         };
 
@@ -95,7 +95,7 @@
 &none        &none      &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none   &trans  &trans  &trans  &trans  &trans  &trans
 &none        &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none   &trans  &trans  &trans  &trans  &trans  &trans
 &bootloader  &none      &none           &none           &none            &none   &trans  &trans  &trans  &trans  &trans  &trans
-&mkp LCLK    &mkp RCLK  &tog 5          &mkp MCLK       &tog 5           &tog 5  &trans  &trans  &trans
+&mkp LCLK    &mkp RCLK  &tog 5          &mkp MCLK       &tog 5           &tog 5
             >;
         };
 
@@ -104,7 +104,7 @@
 &kp T      &kp TAB    &kp Q  &kp W  &kp E         &kp R         &trans  &trans  &trans  &trans  &trans  &trans
 &kp G      &kp LSHFT  &kp A  &kp S  &kp D         &kp F         &trans  &trans  &trans  &trans  &trans  &trans
 &kp B      &kp LCTRL  &kp Z  &kp X  &kp C         &kp V         &trans  &trans  &trans  &trans  &trans  &trans
-&kp SPACE  &mo 2      &to 0  &mo 3  &kp LEFT_ALT  &kp LEFT_WIN  &trans  &trans  &trans
+&kp SPACE  &mo 2      &to 0  &mo 3  &kp LEFT_ALT  &kp LEFT_WIN
             >;
         };
 
@@ -113,13 +113,8 @@
 &none       &none          &none       &none         &none            &none  &trans  &trans  &trans  &trans  &trans  &trans
 &none       &none          &none       &none         &soft_off        &none  &trans  &trans  &trans  &trans  &trans  &trans
 &none       &none          &none       &none         &none            &none  &trans  &trans  &trans  &trans  &trans  &trans
-&bt BT_NXT  &kp LG(SPACE)  &bt BT_PRV  &out OUT_TOG  &kp PRINTSCREEN  &none  &trans  &trans  &trans
+&bt BT_NXT  &kp LG(SPACE)  &bt BT_PRV  &out OUT_TOG  &kp PRINTSCREEN  &none
             >;
         };
     };
-};
-
-&msc {
-    time-to-max-speed-ms = <500>;
-    acceleration-exponent = <1>;
 };
