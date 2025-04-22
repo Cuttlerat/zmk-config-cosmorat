@@ -8,6 +8,8 @@
 
 &soft_off { hold-time-ms = <3000>; };
 
+&mt { flavor = "balanced"; };
+
 / {
     behaviors {
         as: auto_shift {
