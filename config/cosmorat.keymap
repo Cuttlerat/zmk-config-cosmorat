@@ -98,10 +98,10 @@
 
         gaming_mode {
             bindings = <
-&kp T      &kp TAB    &kp Q  &kp W  &kp E         &kp R         &trans  &trans  &trans  &trans  &trans  &trans
-&kp G      &kp LSHFT  &kp A  &kp S  &kp D         &kp F         &trans  &trans  &trans  &trans  &trans  &trans
-&kp B      &kp LCTRL  &kp Z  &kp X  &kp C         &kp V         &trans  &trans  &trans  &trans  &trans  &trans
-&kp SPACE  &mo 1      &to 0  &mo 2  &kp LEFT_ALT  &kp LEFT_WIN
+&kp T      &kp TAB    &kp Q   &kp W  &kp E         &kp R         &trans  &trans  &trans  &trans  &trans  &trans
+&kp G      &kp LSHFT  &kp A   &kp S  &kp D         &kp F         &trans  &trans  &trans  &trans  &trans  &trans
+&kp B      &kp LCTRL  &kp Z   &kp X  &kp C         &kp V         &trans  &trans  &trans  &trans  &trans  &trans
+&kp SPACE  &mo 1      &tog 5  &mo 2  &kp LEFT_ALT  &kp LEFT_WIN
             >;
         };
 
