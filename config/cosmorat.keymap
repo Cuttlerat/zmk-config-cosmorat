@@ -39,7 +39,7 @@
         cb: ctrl_backspase {
             compatible = "zmk,behavior-mod-morph";
             label = "CTRL_BACKSPASE";
-            bindings = <&kp BACKSPACE>, <&mo 6>;
+            bindings = <&kp BACKSPACE>, <&mo 7>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_LALT)>;
@@ -55,17 +55,8 @@
             bindings = <
 &kp TAB         &kp Q      &kp W           &kp E        &kp R        &kp T         &kp Y  &kp U        &kp I        &kp O       &kp P     &kp LBKT
 &kp LEFT_SHIFT  &kp A      &mt LEFT_ALT S  &mt LCTRL D  &mt LSHFT F  &kp G         &kp H  &mt RSHFT J  &mt RCTRL K  &mt RALT L  &kp SEMI  &kp SQT
-&mo 4           &kp Z      &kp X           &kp C        &kp V        &kp B         &kp N  &kp M        &kp COMMA    &kp DOT     &kp FSLH  &kp RBKT
-&kp BACKSPACE   &kp SPACE  &mo 6           &mo 5        &ca          &kp LEFT_WIN
-            >;
-        };
-
-        function_keys {
-            bindings = <
-&none      &none     &none      &none   &none   &none   &trans  &trans  &trans  &trans   &trans   &trans
-&kp F1     &kp F2    &kp F3     &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&kp LCTRL  &kp LALT  &kp LSHFT  &none   &none   &none   &trans  &trans  &trans  &trans   &trans   &trans
-&to 0      &to 0     &to 0      &to 0   &to 0   &to 0
+&mo 3           &kp Z      &kp X           &kp C        &kp V        &kp B         &kp N  &kp M        &kp COMMA    &kp DOT     &kp FSLH  &kp RBKT
+&kp BACKSPACE   &kp SPACE  &mo 6           &mo 4        &ca          &kp LEFT_WIN
             >;
         };
 
@@ -74,7 +65,7 @@
 &none      &none      &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none   &trans  &trans  &trans  &trans  &trans  &trans
 &none      &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none   &trans  &trans  &trans  &trans  &trans  &trans
 &none      &none      &none           &none           &none            &none   &trans  &trans  &trans  &trans  &trans  &trans
-&mkp LCLK  &mkp RCLK  &tog 2          &mkp MCLK       &tog 2           &tog 2
+&mkp LCLK  &mkp RCLK  &tog 1          &mkp MCLK       &tog 1           &tog 1
             >;
         };
 
@@ -83,7 +74,7 @@
 &kp T      &kp TAB    &kp Q   &kp W  &kp E         &kp R         &trans  &trans  &trans  &trans  &trans  &trans
 &kp G      &kp LSHFT  &kp A   &kp S  &kp D         &kp F         &trans  &trans  &trans  &trans  &trans  &trans
 &kp B      &kp LCTRL  &kp Z   &kp X  &kp C         &kp V         &trans  &trans  &trans  &trans  &trans  &trans
-&kp SPACE  &mo 6      &tog 3  &mo 5  &kp LEFT_ALT  &kp LEFT_WIN
+&kp SPACE  &mo 7      &tog 2  &mo 4  &kp LEFT_ALT  &kp LEFT_WIN
             >;
         };
 
@@ -100,16 +91,25 @@
             bindings = <
 &kp LC(LA(DELETE))  &none           &none     &kp UP_ARROW    &none      &none      &none  &none           &kp UP_ARROW    &none            &none  &none
 &kp DEL             &kp LEFT_SHIFT  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &none      &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none
-&to 1               &kp LCTRL       &none     &none           &none      &kp ENTER  &none  &none           &none           &none            &none  &none
-&tog 6              &tog 6          &tog 6    &none           &tog 6     &tog 3
+&to 5               &kp LCTRL       &none     &none           &none      &kp ENTER  &none  &none           &none           &none            &none  &none
+&tog 4              &tog 4          &tog 4    &none           &tog 4     &tog 2
+            >;
+        };
+
+        function_keys {
+            bindings = <
+&none      &none     &none      &none   &none   &none   &trans  &trans  &trans  &trans   &trans   &trans
+&kp F1     &kp F2    &kp F3     &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&kp LCTRL  &kp LALT  &kp LSHFT  &none   &none   &none   &trans  &trans  &trans  &trans   &trans   &trans
+&tog 5     &tog 5    &tog 5     &tog 5  &tog 5  &tog 5
             >;
         };
 
         numbers {
             bindings = <
 &kp ESC  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)  &kp LS(NUMBER_6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)  &none
-&to 2    &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp N6            &kp N7      &kp N8      &kp N9      &kp N0      &none
-&tog 6   &none       &none       &kp GRAVE   &kp EQUAL   &kp ENTER   &kp MINUS         &kp BSLH    &none       &none       &none       &none
+&to 1    &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp N6            &kp N7      &kp N8      &kp N9      &kp N0      &none
+&tog 5   &none       &none       &kp GRAVE   &kp EQUAL   &kp ENTER   &kp MINUS         &kp BSLH    &none       &none       &none       &none
 &trans   &trans      &trans      &trans      &trans      &trans
             >;
         };
