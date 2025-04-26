@@ -20,3 +20,10 @@ config ZMK_SPLIT
 	default y
 
 endif
+
+if ZMK_STUDIO_SUPPORT
+
+config ZMK_STUDIO
+    default y
+
+endif
