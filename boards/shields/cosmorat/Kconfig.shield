@@ -11,4 +11,6 @@ config SHIELD_COSMORAT_LEFT
 config SHIELD_COSMORAT_RIGHT
 	def_bool $(shields_list_contains,cosmorat_right)
 
-source "boards/shields/cosmorat/Kconfig.studio"
+config ZMK_STUDIO_SUPPORT
+    bool "Enable ZMK Studio support"
+    default y
