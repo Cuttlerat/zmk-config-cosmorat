@@ -27,7 +27,3 @@
         , <&gpio0 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         ;
 };
-
-&trackball_listener {
-    status = "okay";
-};
