@@ -1,0 +1,3 @@
+config ZMK_STUDIO
+    bool "Enable ZMK Studio support"
+    default y 
