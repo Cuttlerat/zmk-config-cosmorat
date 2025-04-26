@@ -14,3 +14,10 @@ config SHIELD_COSMORAT_RIGHT
 config ZMK_STUDIO_SUPPORT
     bool "Enable ZMK Studio support"
     default y
+
+if ZMK_STUDIO_SUPPORT
+
+config ZMK_STUDIO
+    default y
+
+endif
