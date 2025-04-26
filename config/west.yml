@@ -2,8 +2,8 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: nordicsemi
-      url-base: https://github.com/nordicsemi
+    - name: bullwinkle3000
+      url-base: https://github.com/bullwinkle3000
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -11,9 +11,8 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: nrfxlib
-      remote: nordicsemi
-      revision: main
-      import: west.yml
+    - name: zmk-pmw3610-driver
+      remote: bullwinkle3000
+      revision: pmw3360
   self:
     path: config
