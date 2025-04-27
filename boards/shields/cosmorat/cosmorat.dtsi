@@ -1,4 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <input/processors.dtsi>
 
 / {
     chosen {
@@ -35,18 +36,9 @@
         compatible = "zmk,split";
     };
 
-    input_processors {
-        super_slow_scaler: super_slow_scaler {
-            compatible = "zmk,input-processor-scale";
-            #input-processor-cells = <1>;
-            scale-multiplier = <1>;
-            scale-divisor = <100>;
-        };
-    };
-
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         status = "disabled";
-        input-processors = <&super_slow_scaler 0>;
+        input-processors = <&zip_xy_scaler 1 25>;
     };
 };
