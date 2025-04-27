@@ -13,6 +13,6 @@ manifest:
       import: app/west.yml
     - name: zmk-pmw3360-driver
       remote: Cuttlerat
-      revision: main
+      revision: new
   self:
     path: config
