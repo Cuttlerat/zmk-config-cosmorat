@@ -29,5 +29,5 @@
 };
 
 &trackball_listener {
-    status = "okay";
+    status = "disabled";
 };
