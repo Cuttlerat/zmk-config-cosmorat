@@ -10,6 +10,7 @@ config ZMK_SPLIT_ROLE_CENTRAL
 	default y
 
 config ZMK_POINTING
+    bool
     default y
 
 endif
@@ -26,6 +27,7 @@ config SPI
     default y
 
 config ZMK_POINTING
+    bool
     default y
 
 endif
