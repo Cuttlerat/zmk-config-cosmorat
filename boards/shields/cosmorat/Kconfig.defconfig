@@ -1,21 +1,18 @@
 if SHIELD_COSMORAT_LEFT
-
-config ZMK_KEYBOARD_NAME
-	default "Cosmorat Left"
 	
 config ZMK_SPLIT
-	default y
-	
-config ZMK_SPLIT_ROLE_CENTRAL
 	default y
 
 endif
 
 if SHIELD_COSMORAT_RIGHT
 
-config ZMK_KEYBOARD_NAME
-	default "Cosmorat Right"
-	
+config ZMK_SPLIT_ROLE_CENTRAL
+	default y
+
+config ZMK_POINTING
+    default y
+
 config ZMK_SPLIT
 	default y
 
