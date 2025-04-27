@@ -1,5 +1,4 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include <input/processors.dtsi>
 
 / {
     chosen {
@@ -39,6 +38,5 @@
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         status = "disabled";
-        input-processors = <&zip_xy_scaler 1 25>;
     };
 };
