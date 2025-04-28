@@ -1,6 +1,7 @@
 #include "cosmorat.dtsi"
 #include <dt-bindings/input/input-event-codes.h>
 #include <input/processors.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
 
 / {
     chosen {
@@ -79,6 +80,6 @@
 
     scroll_layer {
         layers = <8>;
-        input-processors = <&zip_xy_to_scroll_mapper>;
+        input-processors = <&zip_xy_to_scroll_mapper &zip_scroll_transform 1 1 -1 1>;
     };
 };
