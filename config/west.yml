@@ -11,8 +11,8 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk-pmw3360-driver
+    - name: zmk-pmw3360-driver-1
       remote: Cuttlerat
-      revision: main
+      revision: dev
   self:
     path: config
