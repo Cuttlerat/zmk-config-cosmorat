@@ -43,7 +43,14 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        test {
+            bindings = <&none>;
+            key-positions = <38 0>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -54,7 +61,7 @@
 &kp LEFT_SHIFT  &kp A      &mt LEFT_ALT S  &mt LCTRL D  &mt LSHFT F  &kp G         &kp H  &mt RSHFT J  &mt RCTRL K  &mt RALT L  &kp SEMI  &kp SQT
 &mo 3           &kp Z      &kp X           &kp C        &kp V        &kp B         &kp N  &kp M        &kp COMMA    &kp DOT     &kp FSLH  &kp RBKT
 &kp BACKSPACE   &kp SPACE  &mo 6           &mo 4        &ca          &kp LEFT_WIN
-                                                                                                       &none        &none
+                                                                                                       &tog 7       &none
             >;
         };
 
