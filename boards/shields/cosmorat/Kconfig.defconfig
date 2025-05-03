@@ -1,22 +1,22 @@
-if SHIELD_COSMORAT_LEFT
+if SHIELD_COSMORAT_RIGHT
 	
 config ZMK_SPLIT
-	default y
-
-endif
-
-if SHIELD_COSMORAT_RIGHT
-
-config ZMK_SPLIT_ROLE_CENTRAL
 	default y
 
 config ZMK_POINTING
     default y
 
-config ZMK_SPLIT
-	default y
-
 config SPI
     default y
+
+endif
+
+if SHIELD_COSMORAT_LEFT
+
+config ZMK_SPLIT_ROLE_CENTRAL
+	default y
+
+config ZMK_SPLIT
+	default y
 
 endif
