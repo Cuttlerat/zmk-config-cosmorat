@@ -3,10 +3,10 @@ if SHIELD_COSMORAT_RIGHT
 config ZMK_SPLIT
 	default y
 
-config ZMK_POINTING
+config SPI
     default y
 
-config SPI
+config ZMK_POINTING
     default y
 
 endif
@@ -18,5 +18,8 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 config ZMK_SPLIT
 	default y
+
+config ZMK_POINTING
+    default y
 
 endif
