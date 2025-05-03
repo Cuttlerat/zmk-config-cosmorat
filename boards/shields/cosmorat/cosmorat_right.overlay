@@ -5,7 +5,7 @@
 
 / {
     chosen {
-        zmk,split-role = "central";
+        zmk,split-role = "peripheral";
     };
     
     /omit-if-no-ref/ zip_temp_layer: zip_temp_layer {
@@ -78,8 +78,7 @@
     };
 };
 
-&trackball_listener {
-    status = "okay";
+&trackball_split {
     device = <&trackball>;
     input-processors = <&zip_temp_layer 7 2000 &zip_xy_scaler 1 4>;
 
