@@ -15,12 +15,12 @@
             type = <INPUT_EV_REL>;
             map = <INPUT_REL_Y INPUT_REL_WHEEL>;
         };
-        
-        disable_x_movement_transform: disable_x_movement_transform {
-            compatible = "zmk,input-processor-transform";
-            #input-processor-cells = <1>;
-            x-codes = <INPUT_EV_REL INPUT_REL_X>;
-            x-values = <0>;
+
+        block_x_movement_mapper: block_x_movement_mapper {
+            compatible = "zmk,input-processor-code-mapper";
+            #input-processor-cells = <0>;
+            type = <INPUT_EV_REL>;
+            map = <INPUT_REL_X 0>;
         };
     };
 };
@@ -53,6 +53,6 @@
 
     scroll_layer {
         layers = <8>;
-        input-processors = <&zip_transform (INPUT_TRANSFORM_X_INHIBIT) &vertical_scroll_only_mapper &zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT) &zip_scroll_scaler 1 4>;
+        input-processors = <&block_x_movement_mapper &vertical_scroll_only_mapper &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT &zip_scroll_scaler 1 4>;
     };
 };
