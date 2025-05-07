@@ -32,7 +32,7 @@
 
 &trackball_listener {
     status = "okay";
-    input-processors = <&zip_temp_layer 7 2000 &zip_xy_scaler 1 32>;
+    input-processors = <&zip_temp_layer 7 2000 &zip_xy_scaler 1 64>;
 
     scroll_layer {
         layers = <8>;
