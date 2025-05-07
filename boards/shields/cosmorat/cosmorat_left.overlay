@@ -19,7 +19,8 @@
         disable_x_movement_transform: disable_x_movement_transform {
             compatible = "zmk,input-processor-transform";
             #input-processor-cells = <1>;
-            transform-map = <INPUT_EV_REL INPUT_REL_X 0>;
+            x-codes = <INPUT_EV_REL INPUT_REL_X>;
+            x-values = <0>;
         };
     };
 };
@@ -52,6 +53,6 @@
 
     scroll_layer {
         layers = <8>;
-        input-processors = <&disable_x_movement_transform 0 &vertical_scroll_only_mapper &zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT) &zip_scroll_scaler 1 4>;
+        input-processors = <&zip_transform (INPUT_TRANSFORM_X_INHIBIT) &vertical_scroll_only_mapper &zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT) &zip_scroll_scaler 1 4>;
     };
 };
