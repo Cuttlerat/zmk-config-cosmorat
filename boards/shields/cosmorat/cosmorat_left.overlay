@@ -15,6 +15,12 @@
             type = <INPUT_EV_REL>;
             map = <INPUT_REL_Y INPUT_REL_WHEEL>;
         };
+        
+        disable_x_movement_transform: disable_x_movement_transform {
+            compatible = "zmk,input-processor-transform";
+            #input-processor-cells = <0>;
+            transform-map = <INPUT_EV_REL INPUT_REL_X 0>;
+        };
     };
 };
 
@@ -46,6 +52,6 @@
 
     scroll_layer {
         layers = <8>;
-        input-processors = <&vertical_scroll_only_mapper &zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT) &zip_scroll_scaler 1 4>;
+        input-processors = <&disable_x_movement_transform &vertical_scroll_only_mapper &zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT) &zip_scroll_scaler 1 4>;
     };
 };
