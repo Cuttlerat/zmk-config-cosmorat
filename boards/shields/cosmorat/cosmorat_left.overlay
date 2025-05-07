@@ -11,7 +11,7 @@
     input_processors {
         zero_x_scaler: zero_x_scaler {
             compatible = "zmk,input-processor-scaler";
-            #input-processor-cells = <0>;
+            #input-processor-cells = <2>;
             type = <INPUT_EV_REL>;
             multipliers = <INPUT_REL_X 0>;
             divisors = <INPUT_REL_X 1>;
@@ -54,6 +54,6 @@
 
     scroll_layer {
         layers = <8>;
-        input-processors = <&zero_x_scaler &vertical_scroll_mapper &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT &zip_scroll_scaler 1 4>;
+        input-processors = <&zero_x_scaler 0 1 &vertical_scroll_mapper &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT &zip_scroll_scaler 1 4>;
     };
 };
