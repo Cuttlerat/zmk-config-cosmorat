@@ -9,18 +9,19 @@
     };
 
     input_processors {
-        vertical_scroll_only_mapper: vertical_scroll_only_mapper {
+        zero_x_scaler: zero_x_scaler {
+            compatible = "zmk,input-processor-scaler";
+            #input-processor-cells = <0>;
+            type = <INPUT_EV_REL>;
+            multipliers = <INPUT_REL_X 0>;
+            divisors = <INPUT_REL_X 1>;
+        };
+        
+        vertical_scroll_mapper: vertical_scroll_mapper {
             compatible = "zmk,input-processor-code-mapper";
             #input-processor-cells = <0>;
             type = <INPUT_EV_REL>;
             map = <INPUT_REL_Y INPUT_REL_WHEEL>;
-        };
-
-        block_x_movement_mapper: block_x_movement_mapper {
-            compatible = "zmk,input-processor-code-mapper";
-            #input-processor-cells = <0>;
-            type = <INPUT_EV_REL>;
-            map = <INPUT_REL_X 0>;
         };
     };
 };
@@ -53,6 +54,6 @@
 
     scroll_layer {
         layers = <8>;
-        input-processors = <&block_x_movement_mapper &vertical_scroll_only_mapper &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT &zip_scroll_scaler 1 4>;
+        input-processors = <&zero_x_scaler &vertical_scroll_mapper &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT &zip_scroll_scaler 1 4>;
     };
 };
