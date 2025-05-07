@@ -1,7 +1,13 @@
-if SHIELD_COSMORAT
+if SHIELD_COSMORAT_RIGHT
+    config SPI
+        default y
+    config ZMK_POINTING
+        default y
+endif
 
-# Name must be less than 16 characters long!
-config ZMK_KEYBOARD_NAME
-    default "Cosmos Rata"
-
+if SHIELD_COSMORAT_LEFT
+    config ZMK_SPLIT_ROLE_CENTRAL
+        default y
+    config ZMK_POINTING
+        default y
 endif
