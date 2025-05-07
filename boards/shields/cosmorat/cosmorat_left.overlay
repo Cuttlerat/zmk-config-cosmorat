@@ -13,8 +13,9 @@
             compatible = "zmk,input-processor-scaler";
             #input-processor-cells = <2>;
             type = <INPUT_EV_REL>;
-            multipliers = <INPUT_REL_X 0>;
-            divisors = <INPUT_REL_X 1>;
+            codes = <INPUT_REL_X>;
+            multipliers = <0>;
+            divisors = <1>;
         };
         
         vertical_scroll_mapper: vertical_scroll_mapper {
