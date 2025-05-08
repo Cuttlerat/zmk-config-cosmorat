@@ -41,6 +41,13 @@
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_LALT)>;
         };
+        
+        mlt: mouse_left_toggle {
+            compatible = "zmk,behavior-toggle";
+            label = "MOUSE_LEFT_TOGGLE";
+            #binding-cells = <0>;
+            bindings = <&macro_press &mkp LCLK>, <&macro_release &mkp LCLK>;
+        };
     };
 
     keymap {
@@ -52,7 +59,7 @@
 &kp LEFT_SHIFT  &kp A      &mt LEFT_ALT S  &mt LCTRL D  &mt LSHFT F  &kp G         &kp H  &mt RSHFT J  &mt RCTRL K  &mt RALT L  &kp SEMI  &kp SQT
 &mo 3           &kp Z      &kp X           &kp C        &kp V        &kp B         &kp N  &kp M        &kp COMMA    &kp DOT     &kp FSLH  &kp RBKT
 &kp SPACE       &kp BACKSPACE  &mo 6           &mo 4        &ca          &kp LEFT_WIN
-                                                                                                       &tog 7       &none
+                                                                                                       &mlt       &none
             >;
         };
 
