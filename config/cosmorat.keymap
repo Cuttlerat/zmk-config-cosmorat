@@ -43,12 +43,10 @@
         };
         
         smk: sticky_mouse_key {
-            compatible = "zmk,behavior-sticky-key";
+            compatible = "zmk,behavior-key-toggle";
             label = "STICKY_MOUSE_KEY";
             #binding-cells = <1>;
             bindings = <&mkp>;
-            release-after-ms = <1000000>;
-            quick-release;
         };
     };
 
