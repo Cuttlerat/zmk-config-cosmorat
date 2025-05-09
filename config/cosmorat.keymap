@@ -46,7 +46,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "MOUSE_TOGGLE_MACRO";
             #binding-cells = <0>;
-            tapping-term-ms = 0;
+            tapping-term-ms = <4294967295>;
             bindings = <&macro_press &mkp LCLK>, <&macro_release &mkp LCLK>;
         };
     };
