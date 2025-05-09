@@ -37,22 +37,6 @@
                 , <&macro_end>
                 ;
         };
-
-        press_mouse: press_mouse {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <0>;
-            tap-ms = <0>;
-            bindings = <&macro_press &mkp LCLK>;
-        };
-
-        hold_mouse: hold_mouse {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <0>;
-            tap-ms = <0>;
-            bindings = <&macro_release &mkp LCLK>;
-        };
     };
 
     behaviors {
@@ -103,7 +87,7 @@
 &kp LEFT_SHIFT  &kp A      &mt LEFT_ALT S  &mt LCTRL D  &mt LSHFT F  &kp G         &kp H  &mt RSHFT J  &mt RCTRL K  &mt RALT L  &kp SEMI  &kp SQT
 &mo 3           &kp Z      &kp X           &kp C        &kp V        &kp B         &kp N  &kp M        &kp COMMA    &kp DOT     &kp FSLH  &kp RBKT
 &kp SPACE       &kp BACKSPACE  &mo 6           &mo 4        &ca          &kp LEFT_WIN
-                                                                                                       &hold_mouse  &none
+                                                                                                       &toggle_left_mouse  &none
             >;
         };
 
