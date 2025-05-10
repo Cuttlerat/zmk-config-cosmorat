@@ -43,14 +43,6 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        mouse_drag {
-            if-layers = <9>;
-            then-run-macros = <&mouse_press>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
