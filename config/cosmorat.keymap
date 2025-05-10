@@ -41,13 +41,13 @@
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_LALT)>;
         };
-        
-        mtm: mouse_toggle_macro {
-            compatible = "zmk,behavior-tap-dance";
-            label = "MOUSE_TOGGLE_MACRO";
-            #binding-cells = <0>;
-            tapping-term-ms = <4294967295>;
-            bindings = <&macro_press &mkp LCLK>, <&macro_release &mkp LCLK>;
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        mouse_drag {
+            if-layers = <9>;
+            then-run-macros = <&mouse_press>;
         };
     };
 
@@ -60,7 +60,7 @@
 &kp LEFT_SHIFT  &kp A      &mt LEFT_ALT S  &mt LCTRL D  &mt LSHFT F  &kp G         &kp H  &mt RSHFT J  &mt RCTRL K  &mt RALT L  &kp SEMI  &kp SQT
 &mo 3           &kp Z      &kp X           &kp C        &kp V        &kp B         &kp N  &kp M        &kp COMMA    &kp DOT     &kp FSLH  &kp RBKT
 &kp SPACE       &kp BACKSPACE  &mo 6           &mo 4        &ca          &kp LEFT_WIN
-                                                                                                       &mtm  &none
+                                                                                                       &none  &none
             >;
         };
 

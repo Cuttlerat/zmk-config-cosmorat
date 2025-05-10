@@ -3,3 +3,6 @@ config SHIELD_COSMORAT_LEFT
 
 config SHIELD_COSMORAT_RIGHT
 	def_bool $(shields_list_contains,cosmorat_right)
+
+config SHIELD_COSMORAT_DONGLE
+	def_bool $(shields_list_contains,cosmorat_dongle)

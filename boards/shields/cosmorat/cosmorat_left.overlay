@@ -1,27 +1,10 @@
 #include "cosmorat.dtsi"
-#include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
 / {
     chosen {
-        zmk,split-role = "central";
-    };
-
-    input_processors {
-        x_blocker: x_blocker {
-            compatible = "zmk,input-processor-code-mapper";
-            #input-processor-cells = <0>;
-            type = <INPUT_EV_REL>;
-            map = <INPUT_REL_X INPUT_REL_MISC>;
-        };
-        
-        vertical_scroll_only_mapper: vertical_scroll_only_mapper {
-            compatible = "zmk,input-processor-code-mapper";
-            #input-processor-cells = <0>;
-            type = <INPUT_EV_REL>;
-            map = <INPUT_REL_Y INPUT_REL_WHEEL>;
-        };
+        zmk,split-role = "peripheral";
     };
 };
 
@@ -45,14 +28,4 @@
         , <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         , <&gpio0 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         ;
-};
-
-&trackball_listener {
-    status = "okay";
-    input-processors = <&zip_temp_layer 7 2000 &zip_xy_scaler 1 10>;
-
-    scroll_layer {
-        layers = <8>;
-        input-processors = <&x_blocker &vertical_scroll_only_mapper &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT &zip_scroll_scaler 1 4>;
-    };
 };

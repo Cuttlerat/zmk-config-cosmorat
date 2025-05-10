@@ -5,7 +5,7 @@ if SHIELD_COSMORAT_RIGHT
         default y
 endif
 
-if SHIELD_COSMORAT_LEFT
+if SHIELD_COSMORAT_DONGLE
     config ZMK_SPLIT_ROLE_CENTRAL
         default y
     config ZMK_POINTING
