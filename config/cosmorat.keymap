@@ -169,7 +169,7 @@
 &trans      &kp N6  &kp N7  &kp N8  &kp N9  &kp N0   &trans  &trans  &trans      &trans  &trans  &trans
 &sys_reset  &trans  &trans  &trans  &trans  &kp RET  &trans  &trans  &trans      &trans  &trans  &trans
 &trans      &trans  &trans  &trans  &trans  &trans
-                                                                     &mktg MCLK  &trans
+                                                                     &mktg LCLK  &trans
             >;
         };
     };
