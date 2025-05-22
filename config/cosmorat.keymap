@@ -97,7 +97,7 @@
 &kp T      &kp TAB    &kp Q   &kp W  &kp E         &kp R         &trans  &trans     &trans     &trans     &trans  &trans
 &kp G      &kp LSHFT  &kp A   &kp S  &kp D         &kp F         &trans  &mkp LCLK  &mkp RCLK  &mkp MCLK  &trans  &trans
 &kp B      &kp LCTRL  &kp Z   &kp X  &kp C         &kp V         &trans  &mo 8      &trans     &trans     &trans  &trans
-&kp SPACE  &mo 6      &tog 2  &mo 4  &kp LEFT_ALT  &kp LEFT_WIN
+&kp SPACE  &mo 9      &tog 2  &mo 4  &kp LEFT_ALT  &kp LEFT_WIN
                                                                                     &trans     &trans
             >;
         };
@@ -134,11 +134,11 @@
 
         numbers {
             bindings = <
-&kp ESC  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)  &kp LS(NUMBER_6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)  &none
-&to 1    &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp N6            &kp N7      &kp N8      &kp N9      &kp N0      &none
-&tog 5   &none       &none       &kp GRAVE   &kp EQUAL   &kp ENTER   &kp MINUS         &kp BSLH    &none       &none       &none       &none
-&none    &none       &trans      &trans      &trans      &trans
-                                                                                                   &trans      &trans
+&kp ESC  &kp LS(N1)     &kp LS(N2)  &kp LS(N3)     &kp LS(N4)  &kp LS(N5)  &kp LS(NUMBER_6)  &kp LS(N7)     &kp LS(N8)     &kp LS(N9)         &kp LS(N0)  &none
+&to 1    &kp N1         &kp N2      &kp N3         &kp N4      &kp N5      &kp N6            &kp N7         &kp N8         &kp N9             &kp N0      &none
+&tog 5   &kp LS(GRAVE)  &kp GRAVE   &kp LS(EQUAL)  &kp EQUAL   &kp ENTER   &kp MINUS         &kp LS(MINUS)  &kp BACKSLASH  &kp LS(BACKSLASH)  &none       &none
+&none    &none          &trans      &trans         &trans      &trans
+                                                                                                            &trans         &trans
             >;
         };
 
@@ -159,6 +159,16 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans
                                                                 &trans  &trans
+            >;
+        };
+
+        gaming_numbers {
+            bindings = <
+&kp ESC     &kp N1  &kp N2  &kp N3  &kp N4  &kp N5   &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &kp N6  &kp N7  &kp N8  &kp N9  &kp N0   &trans  &trans  &trans  &trans  &trans  &trans
+&sys_reset  &trans  &trans  &trans  &trans  &kp RET  &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans  &trans  &trans  &trans  &trans
+                                                                     &trans  &trans
             >;
         };
     };
