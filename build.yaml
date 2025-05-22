@@ -22,15 +22,15 @@ include:
   - board: nice_nano_v2
     shield: cosmorat_left
     artifact-name: cosmorat_left
-    # snippet: zmk-usb-logging
+    snippet: zmk-usb-logging
   - board: nice_nano_v2
     shield: cosmorat_right
     artifact-name: cosmorat_right
-    # snippet: zmk-usb-logging
+    snippet: zmk-usb-logging
   - board: nice_nano_v2
     shield: cosmorat_dongle
     artifact-name: cosmorat_dongle
-    # snippet: zmk-usb-logging
+    snippet: zmk-usb-logging
   - board: nice_nano_v2
     shield: settings_reset
     
