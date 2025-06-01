@@ -37,8 +37,13 @@
     status = "disabled";
 };
 
+&trackball_split {
+    status = "okay";
+};
+
 &trackball_listener {
     status = "okay";
+    device = <&trackball_split>;
     input-processors = <&zip_temp_layer 7 2000 &zip_xy_scaler 1 10>;
 
     scroll_layer {
