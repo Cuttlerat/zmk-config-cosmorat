@@ -37,7 +37,6 @@
             psels = <NRF_PSEL(SPIM_SCK, 0, 17)>,
                     <NRF_PSEL(SPIM_MOSI, 0, 20)>,
                     <NRF_PSEL(SPIM_MISO, 1, 15)>;
-            bias-disable;
         };
     };
     spi0_sleep: spi0_sleep {
@@ -67,7 +66,13 @@
     };
 };
 
-&trackball_split {
+// Временно отключаем, так как используем старый API
+// &trackball_split {
+//     status = "okay";
+//     device = <&trackball>;
+// };
+
+// Включаем trackball listener напрямую
+&trackball_listener {
     status = "okay";
-    device = <&trackball>;
 };
