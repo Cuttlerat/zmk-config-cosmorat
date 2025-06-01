@@ -70,5 +70,4 @@
 &trackball_split {
     status = "okay";
     device = <&trackball>;
-    reg = <0>;
 };
