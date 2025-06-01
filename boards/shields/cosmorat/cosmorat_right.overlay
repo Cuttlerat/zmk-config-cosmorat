@@ -7,6 +7,12 @@
     chosen {
         zmk,split-role = "peripheral";
     };
+
+    trackball_split {
+        compatible = "zmk,input-split";
+        status = "okay";
+        device = <&trackball>;
+    };
 };
 
 &default_transform {
@@ -67,7 +73,11 @@
     };
 };
 
-&trackball_split {
+&split_inputs {
     status = "okay";
-    device = <&trackball>;
+};
+
+&trackball_listener {
+    status = "okay";
+    input-processors = <&zip_temp_layer 7 2000>;
 };
